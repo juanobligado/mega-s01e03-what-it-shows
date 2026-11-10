@@ -21,12 +21,19 @@ signature: juanobligado
   };
 </script>
 
-[#4471](/kb/incidents/4471) is marked **known: one issue, one fix queued**. Its own data says
-otherwise. The reports merged into it come from three different problems, and the queued parser
-fix closes only one of them.
+[#4471](/kb/incidents/4471) was marked **known: one issue, one fix queued**. Its own data says
+otherwise. The reports merged into it come from three different problems, and the parser fix
+closed only one of them.
+
+Engineering closed #4471 on 5 October:
+
+- `parser`: **fixed**, `fix(dates): parse dd/mm for eu locales`. Ticket #1 closed.
+- `hint`: **won't fix**, the `booking-v3` form is retired. Ticket #2 closed.
+- `one-day`: **not addressed**. Ticket #3 stays open.
 
 <Callout kind="warn">
-Do not close #4471 when the parser fix ships. Two of its problems need fixes of their own.
+#4471 is closed, but the one-day problem is not fixed. Send new one-day reports to #3, not to
+#4471.
 </Callout>
 
 ## What #4471 holds
